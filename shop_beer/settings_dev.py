@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%$!4onqa5o1+h)e59caujjrlednym!l@-^@d#&hknngbl&8$#x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG         = False
+DEBUG         = True
 ALLOWED_HOSTS = ['localhost']
 
 # Application definition
@@ -95,10 +95,10 @@ WSGI_APPLICATION = 'shop_beer.wsgi.application'
 DATABASES = {
  'default': {
  'ENGINE': 'django.db.backends.postgresql_psycopg2',
- 'NAME': 'd3o4mkr9lmhlnc',
- 'USER': 'svmdoiedsgttal',
- 'PASSWORD': 'c9435627c307f6cc4818fc9a307fdffc4e6b1ee68c638f6508e1de825989ba63',
- 'HOST': 'ec2-44-199-158-170.compute-1.amazonaws.com',
+ 'NAME': 'auth-beer',
+ 'USER': 'kuromicho',
+ 'PASSWORD': '123456',
+ 'HOST': 'localhost',
  'PORT': '5432',
  }
 }
