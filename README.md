@@ -19,6 +19,8 @@ Postman Collection.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/kuromicho/workspace/backend-ms-auth)
 
-### Deploy
+### Launched On
 
-![image](https://drive.google.com/uc?export=view&id=1k616mAmFNKbjzotDqE8XJNaGXOcU8053)
+**Heroku** : https://auth-ms-g6.herokuapp.com/
+
+**Api Docs** : https://auth-ms-g6.herokuapp.com/swagger/
