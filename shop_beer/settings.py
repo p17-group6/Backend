@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%$!4onqa5o1+h)e59caujjrlednym!l@-^@d#&hknngbl&8$#x
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG         = False
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'auth-ms-g6.herokuapp']
 
 # Application definition
 
@@ -40,6 +40,17 @@ INSTALLED_APPS = [
     'rest_framework',
     'auth_beer',
 ]
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+        }
+    }
+}
+
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME'   : timedelta(minutes=20),
     'REFRESH_TOKEN_LIFETIME'  : timedelta(days=1),
@@ -95,10 +106,10 @@ WSGI_APPLICATION = 'shop_beer.wsgi.application'
 DATABASES = {
  'default': {
  'ENGINE': 'django.db.backends.postgresql_psycopg2',
- 'NAME': 'd3o4mkr9lmhlnc',
- 'USER': 'svmdoiedsgttal',
- 'PASSWORD': 'c9435627c307f6cc4818fc9a307fdffc4e6b1ee68c638f6508e1de825989ba63',
- 'HOST': 'ec2-44-199-158-170.compute-1.amazonaws.com',
+ 'NAME': 'dckk4qmplf7mme',
+ 'USER': 'ecogmfpygfkmkr',
+ 'PASSWORD': 'af2e9022b3ad69c9b057795bf31f3b68f734cf07199d76e43eedc07111a93861',
+ 'HOST': 'ec2-52-86-177-34.compute-1.amazonaws.com',
  'PORT': '5432',
  }
 }
