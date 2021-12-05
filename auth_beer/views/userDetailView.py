@@ -1,5 +1,4 @@
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
 from rest_framework.generics import GenericAPIView, get_object_or_404
 from rest_framework.response import Response
 from auth_beer.models                import User
@@ -10,7 +9,6 @@ class UserDetailView(GenericAPIView):
     """
         Gets the user due to the provided id and return the user information.
     """
-    permission_classes = (IsAuthenticated,)    
     serializer_class = UserSerializer
     def get(self, request, *args, **kwargs):
         user = get_object_or_404(User, id=kwargs['pk'])

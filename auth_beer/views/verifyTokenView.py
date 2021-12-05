@@ -23,6 +23,5 @@ class VerifyTokenView(TokenVerifyView):
         except TokenError as e:
             raise InvalidToken(e.args[0])
         except Exception as e:
-            print(e)
-        
+            return Response(e.args[0], status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.validated_data, status=status.HTTP_200_OK)
