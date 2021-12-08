@@ -17,10 +17,8 @@ this is a simple backend written with Django as a microservice for an beer page
 
 Postman Collection.
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/kuromicho/workspace/backend-ms-auth)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/lively-crater-731126/workspace/backend-ms-auth)
 
 ### Launched On
 
 **Heroku** : https://auth-ms-g6.herokuapp.com/
-
-**Api Docs** : https://auth-ms-g6.herokuapp.com/swagger/
